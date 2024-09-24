@@ -9,7 +9,7 @@ const { app, server } = require("./socket/index");
 // const app = express()
 app.use(
   cors({
-    // origin: process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL,
     credentials: true,
     origin: "https://ichatzit.vercel.app", // The frontend app you're allowing
     methods: ["GET", "POST", "PUT", "DELETE"], // HTTP methods you want to allow
